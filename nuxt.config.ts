@@ -1,3 +1,4 @@
+import {Configuration} from 'webpack'
 import pkg from './package.json'
 
 export default {
@@ -50,7 +51,15 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    // extend(config, ctx) {
-    // }
+    extend(config: Configuration) {
+      if(!config.module) return;
+      config.module.rules.push({
+        test: /\.ya?ml$/,
+        use: [
+          'json-loader',
+          'yaml-loader'
+        ]
+      })
+    }
   }
 }
