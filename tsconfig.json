@@ -1,0 +1,11 @@
+{
+  "extends": "./node_modules/@nuxt/typescript/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "types": [
+      "@types/node",
+      "@nuxt/vue-app"
+    ],                           /* Type declaration files to be included in compilation. */
+  }
+}
