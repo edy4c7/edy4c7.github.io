@@ -34,14 +34,20 @@
   </section>
 </template>
 
-<script>
-import Card from '~/components/Card'
+<script lang="ts">
+import Card from '~/components/Card.vue'
 
 export default {
   name: 'HomePage',
 
   components: {
     Card
+  },
+
+  async asyncData () {
+    return {
+      yaml: (await import("~/contents/test.yml")).default
+    }
   }
 }
 </script>
