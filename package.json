@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
+    "dev-debug": "node --inspect-brk=9229 node_modules/nuxt-ts/bin/nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
