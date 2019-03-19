@@ -3,6 +3,7 @@ import pkg from './package.json'
 
 export default {
   mode: 'spa',
+  srcDir: 'theme/',
 
   /*
   ** Headers of the page

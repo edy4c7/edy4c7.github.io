@@ -46,7 +46,7 @@ export default {
 
   async asyncData () {
     return {
-      yaml: (await import("~/contents/test.yml")).default
+      yaml: (await import("~~/contents/test.yml")).default
     }
   }
 }
