@@ -43,6 +43,7 @@ export default {
   modules: [
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
+    '@nuxtjs/markdownit',
   ],
 
   /*
@@ -62,5 +63,9 @@ export default {
         ]
       })
     }
+  },
+  markdownit :{
+    injected: true,
+    linkify: true,
   }
 }

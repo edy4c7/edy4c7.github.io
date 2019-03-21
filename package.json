@@ -13,6 +13,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxtjs/markdownit": "^1.2.3",
     "@types/webpack": "^4.4.25",
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
